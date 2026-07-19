@@ -1,0 +1,25 @@
+# 密钥与环境变量（绝对不能提交）
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+
+# 生成的输出物（PDF报告、SHAP图表），体积大且属于运行产物，不建议入库
+output/*.pdf
+output/*.png
+
+# 模拟数据库（体积可能较大，且可通过 init_db.py 一键重新生成，不必入库）
+data/finance.db
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
